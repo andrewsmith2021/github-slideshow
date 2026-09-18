@@ -2,6 +2,12 @@
 
 Pick 4-6 max per conversation. Lead with the ones tied to real research (marked ★) — they land best because they show you did homework specific to HPE right now, not generic interview-prep questions.
 
+## Comcast-specific (highest value — full context in comcast-account.md)
+- ★★ "I saw HPE ProLiant is already running in Comcast's AI Grid field trial — the small-business concierge agent use case. Where does that trial stand today, and what would it take to move it toward a broader commercial deployment?"
+- ★ "Is the Comcast relationship organized as one account, or are Cable/Connectivity & Platforms and Comcast Business run as distinct buying centers with different priorities?"
+- ★ "Comcast Business seems to be the faster-growing, higher-margin part of the relationship right now, with AI-enabled networking, security, and edge compute as stated priorities — is that where you'd want a new account manager to spend the most time?"
+- "Comcast is also virtualizing its network core with DriveNets and white-box hardware through its own 'Janus' initiative — how does that shape where HPE can and can't play in their network?"
+
 ## For Bob Parsons (peer / current account team)
 - ★ "Now that the Telco Solutions software business has moved to HCLTech and Juniper is fully integrated, how has that changed the day-to-day sales motion on this account — are you leading more with networking/AI infrastructure conversations than a year ago?"
 - "How is the account team structured today — would I be co-owning the same account with you, or taking a distinct sub-account/product surface?"

@@ -5,6 +5,7 @@ Quick index for this prep workspace. Work through the files roughly in order.
 | File | Purpose |
 |---|---|
 | [company-and-role.md](./company-and-role.md) | JD breakdown, HPE's current telco/cable strategy, market context |
+| [comcast-account.md](./comcast-account.md) | **The account is Comcast** — HPE's live AI Grid trial with Comcast, Comcast's own network strategy, and where the growth/budget actually is |
 | [people.md](./people.md) | What's publicly known about Bob Parsons (peer/hiring manager) and Imran Jafri (skip-level) |
 | [story-bank.md](./story-bank.md) | STAR story template mapped to every competency in the JD — fill in your own examples |
 | [likely-questions.md](./likely-questions.md) | Questions you're likely to be asked, with answer frameworks |
@@ -20,6 +21,10 @@ Account Manager – Telco at Hewlett Packard Enterprise (HPE), owning one or mor
 **HPE divested its Telco Solutions software business (OSS/BSS, HSS, 5G Subscriber Data Management) to HCLTech, completed August 1, 2026.** At the same time, HPE closed its ~$14B acquisition of **Juniper Networks** in July 2025, roughly doubling its networking business and pushing hard into AI-native networking for service providers (MWC 2026 announcements reinforced this). See [company-and-role.md](./company-and-role.md) for detail and sourcing.
 
 Practical implication for you: this account manager role is almost certainly **not** about the divested telecom-specific OSS/BSS software anymore — it's about selling HPE's infrastructure stack (ProLiant/compute, storage, HPE GreenLake, and networking now inclusive of Juniper) plus AI infrastructure into Telco/Cable accounts. That's a real, informed question to ask in the interview (see [your-questions.md](./your-questions.md)) — asking it well signals you did your homework and understand the business, which is exactly the "IT Industry Acumen" / "HPE Portfolio Knowledge" competency the JD calls out.
+
+## The account is Comcast — and HPE is already in there
+
+In March 2026 HPE launched **HPE AI Grid** (HPE Juniper networking + HPE ProLiant compute + NVIDIA GPUs), and **Comcast is a named early adopter running field trials** — including a small-business "concierge" AI agent running on HPE ProLiant servers at the network edge. This is the single strongest, most current, most specific thing you can reference in the interview. Full detail, plus Comcast's own network strategy (DOCSIS 4.0, the "Janus" core-virtualization initiative with DriveNets) and where the real growth/budget is (Comcast Business, not residential broadband) is in [comcast-account.md](./comcast-account.md).
 
 ## Status
 

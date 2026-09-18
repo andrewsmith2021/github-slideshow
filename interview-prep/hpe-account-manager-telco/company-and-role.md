@@ -40,10 +40,4 @@ Be ready to articulate HPE's differentiation in 1-2 sentences: an integrated, op
 
 ## 4. Account/segment context to research before the interview
 
-If you know (or can guess) which Tier 1 Telco/Cable account you'd own, research separately:
-- Their public AI/network-modernization announcements in the last 12 months
-- Recent earnings call mentions of capex, network investment, or AI strategy
-- Whether they're a current HPE customer (and in what capacity — compute? networking? GreenLake?)
-- Their known relationship with competitors (Dell, Cisco, hyperscalers) if reported publicly
-
-> Fill in account-specific notes here once you know (or confirm) the account: _____________________
+The account is **Comcast** — see [comcast-account.md](./comcast-account.md) for the full deep-dive, including HPE's live AI Grid field trial with Comcast (HPE ProLiant + HPE Juniper + NVIDIA), Comcast's own network initiatives (DOCSIS 4.0, the DriveNets-based "Janus" core virtualization), and where the real growth/budget sits (Comcast Business, not residential broadband).
