@@ -1,5 +1,7 @@
 # Storage Competitive Matrix: HPE vs. NetApp vs. Pure Storage (Everpure)
 
+Note: this matrix compares storage products specifically (HPE, NetApp, Pure/Everpure). **Dell** is also a major infra competitor overall (see company-and-role.md section 3) — its as-a-service consumption model, **APEX**, is covered separately below since it's structurally a close parallel to GreenLake rather than a storage-product-tier matchup.
+
 One thing to know before any of this comes up: **Pure Storage renamed itself to "Everpure, Inc." in February 2026** (ticker still PSTG). Nothing about the products, SKUs, contracts, or support changed — it's a corporate rebrand to be seen as a "data platform" company rather than a storage-only vendor, aimed at winning conversations with AI/data buyers rather than infrastructure buyers. Products are transitioning to Everpure naming through 2026, so you'll see both names in the wild for a while. Knowing this cold is a good "I'm current" flex if storage competitors come up.
 
 ## By segment
@@ -25,6 +27,22 @@ HPE's Alletra Storage MP (including the X10000) is a purpose-built **disaggregat
 2. **Meet disaggregation head-on rather than cede the segment.** NetApp announced **AFX** at Insight 2025 (Oct 2025) — a genuinely disaggregated architecture aimed at AI/exascale workloads, pitched as "parallel-file-system scalability without the complexity." Their differentiation claim is continuity: one ONTAP software stack (same data services, same operational model) across converged A-series boxes and disaggregated AFX alike. Some analysts have pushed back on this as a stretch — WAFL was designed assuming local storage access, so retrofitting disaggregation onto it is architecturally different from HPE's clean-sheet disaggregated design.
 
 **If this comes up (interview or a real deal):** don't get defensive about disaggregation being "new." Counter with third-party validation, not just architecture claims — Alletra Storage MP X10000's NVIDIA certification, HPE's Gartner Leader placement, and GreenLake's SLA-backed terms (which transfer operational risk to HPE rather than leaving the customer to de-risk a new architecture alone). There's also a direct third-party comparison worth knowing exists: **DCIG published a head-to-head report on HPE Alletra Storage MP B10000 vs. NetApp ASA R2** — reference it if a real bake-off ever comes up, even without having read the full thing.
+
+## GreenLake vs. Dell APEX — same layered architecture, so it's not a standalone edge
+
+Worth knowing precisely: **Dell APEX is architecturally almost a mirror of GreenLake.** Don't lean on "we have an as-a-service model and Dell doesn't" — it isn't true, and it'll fall apart if the customer knows APEX at all.
+
+| Layer | HPE | Dell |
+|---|---|---|
+| Platform/portal/billing | GreenLake | **APEX Console** — cloud-hosted platform for procurement, deployment, health monitoring |
+| Storage orchestration | Data Services Cloud Console (DSCC) | **APEX Navigator** — unifies storage management/deployment across environments, then launches into product-specific managers |
+| Storage control plane | (per-product, via DSCC) | **PowerStore Manager**, **PowerFlex Manager** |
+| Compute control plane | Compute Ops Management | **OpenManage / iDRAC** |
+| Networking control plane | Aruba Central / Juniper Mist | **SmartFabric / Dell Networking** |
+
+**Consumption economics are nearly identical too**: Dell APEX uses committed baseline capacity (billed whether consumed or not, 1-5 year terms) plus buffer/burst capacity (instantly available, no hardware-deployment wait, billed monthly on actual use) — the same structure as GreenLake's committed-baseline-plus-burst model. One specific Dell mechanic worth knowing: metered billing for storage/memory products is capped at 85% of total installed capacity, giving customers a hard ceiling on monthly spend.
+
+**Where the real gap is — telco/service-provider edge AI specifically.** There's no confirmed Dell equivalent to HPE's AI Grid — the specific "orchestrate thousands of distributed inference sites as one system" pitch aimed at service providers/telcos (with TELUS and CityFibre also named as interested service providers alongside Comcast). Dell's AI narrative currently centers on raw rack-scale hardware volume (Dell claims 2x+ the rack-scale AI server shipments of its closest competitor, plus the newer PowerRack line) — a manufacturing-scale/hyperscaler-and-enterprise-data-center argument, not a distributed-edge-for-carriers one. That's the real, defensible edge to claim in front of Comcast — not "GreenLake exists and APEX doesn't."
 
 ## How to use this in the interview
 

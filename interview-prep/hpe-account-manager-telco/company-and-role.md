@@ -30,7 +30,7 @@ Three moves in the last 14 months reshape what "Account Manager – Telco" actua
 
 ## 3. Likely competitive landscape to know
 
-- **Dell Technologies** — biggest infra competitor, aggressive in telco/edge.
+- **Dell Technologies** — biggest infra competitor, aggressive in telco/edge. Its as-a-service consumption model, **APEX**, is architecturally a close parallel to GreenLake (same layered structure: APEX Console/Navigator as the platform layer, PowerStore/PowerFlex Manager and OpenManage as the domain control planes underneath, similar committed-baseline-plus-burst economics) — see storage-competitive-matrix.md for the detailed comparison. Don't position GreenLake's existence alone as a Dell differentiator; the real edge is HPE's telco-specific AI Grid distributed-edge positioning, which Dell doesn't appear to have an equivalent of yet.
 - **Cisco** — historically strong in service-provider networking; now a more direct Juniper/HPE-Networking competitor post-acquisition.
 - **NetApp** — primary storage-specific competitor (see section 5 below for product-level matchups).
 - **Nokia / Ericsson** — telecom-native infrastructure vendors (RAN, core), different layer but compete for some infra budget/mindshare.
