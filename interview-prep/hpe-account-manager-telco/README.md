@@ -1,9 +1,10 @@
 # HPE — Account Manager, Telco — Interview Prep Workspace
 
-Quick index for this prep workspace. Work through the files roughly in order.
+Quick index for this prep workspace. **Start with [SUMMARY.md](./SUMMARY.md)** — a one-page recap of everything researched, including the two consolidated competitive charts — then go deep on whichever section matters most.
 
 | File | Purpose |
 |---|---|
+| [SUMMARY.md](./SUMMARY.md) | **Start here** — thread recap, key takeaways, and consolidated competitive charts |
 | [company-and-role.md](./company-and-role.md) | JD breakdown, HPE's current telco/cable strategy, market context |
 | [comcast-account.md](./comcast-account.md) | **The account is Comcast** — HPE's live AI Grid trial with Comcast, Comcast's own network strategy, and where the growth/budget actually is |
 | [storage-competitive-matrix.md](./storage-competitive-matrix.md) | Segment-by-segment matrix: HPE Alletra vs. NetApp AFF/StorageGRID vs. Pure Storage/Everpure |
