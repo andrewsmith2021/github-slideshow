@@ -62,6 +62,8 @@ HPE's storage line is anchored by the **Alletra** family, plus data protection a
 
 HPE was named a **Leader in the 2025 Gartner Magic Quadrant for Enterprise Storage Platforms.**
 
+For a full three-way breakdown (segment-by-segment across HPE, NetApp, and Pure Storage/Everpure — including the Feb 2026 Pure Storage → Everpure rebrand), see [storage-competitive-matrix.md](./storage-competitive-matrix.md).
+
 ### Storage competitive matchup: NetApp AFF A-Series (incl. A20)
 NetApp refreshed its all-flash line in 2025 into a single OS (ONTAP) story across tiers: **A20** (entry, ROBO/start-small, ~15TB+) → A30 → A50 → A70 → A90 (AI/HPC) → A1K (flagship AI/large-scale). NetApp's pitch is "one ONTAP OS, non-disruptive scale from entry to flagship."
 

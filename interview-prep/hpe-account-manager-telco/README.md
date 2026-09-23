@@ -6,6 +6,7 @@ Quick index for this prep workspace. Work through the files roughly in order.
 |---|---|
 | [company-and-role.md](./company-and-role.md) | JD breakdown, HPE's current telco/cable strategy, market context |
 | [comcast-account.md](./comcast-account.md) | **The account is Comcast** — HPE's live AI Grid trial with Comcast, Comcast's own network strategy, and where the growth/budget actually is |
+| [storage-competitive-matrix.md](./storage-competitive-matrix.md) | Segment-by-segment matrix: HPE Alletra vs. NetApp AFF/StorageGRID vs. Pure Storage/Everpure |
 | [people.md](./people.md) | What's publicly known about Bob Parsons (peer/hiring manager) and Imran Jafri (skip-level) |
 | [story-bank.md](./story-bank.md) | STAR story template mapped to every competency in the JD — fill in your own examples |
 | [likely-questions.md](./likely-questions.md) | Questions you're likely to be asked, with answer frameworks |
