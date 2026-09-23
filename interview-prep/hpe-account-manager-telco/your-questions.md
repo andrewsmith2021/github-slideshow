@@ -7,6 +7,7 @@ Pick 4-6 max per conversation. Lead with the ones tied to real research (marked 
 - ★ "Is the Comcast relationship organized as one account, or are Cable/Connectivity & Platforms and Comcast Business run as distinct buying centers with different priorities?"
 - ★ "Comcast Business seems to be the faster-growing, higher-margin part of the relationship right now, with AI-enabled networking, security, and edge compute as stated priorities — is that where you'd want a new account manager to spend the most time?"
 - "Comcast is also virtualizing its network core with DriveNets and white-box hardware through its own 'Janus' initiative — how does that shape where HPE can and can't play in their network?"
+- "Is storage — the Alletra MP X10000, given its NVIDIA certification and metadata/vector enrichment for RAG-type workloads — part of the AI Grid trial scope at Comcast, or is that trial currently compute-and-network only?"
 
 ## For Bob Parsons (peer / current account team)
 - ★ "Now that the Telco Solutions software business has moved to HCLTech and Juniper is fully integrated, how has that changed the day-to-day sales motion on this account — are you leading more with networking/AI infrastructure conversations than a year ago?"

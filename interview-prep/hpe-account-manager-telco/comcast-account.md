@@ -17,6 +17,20 @@
 
 **Why this matters for the interview:** you can say, concretely, "I know HPE ProLiant is already running in Comcast's edge AI field trial for the small-business concierge use case — I'd want to understand how that trial is progressing and where the next expansion points are" — that is a materially stronger answer than generic "I'd build relationships and learn the account" language.
 
+### Where storage (Alletra Storage MP X10000) fits — HPE's general positioning, not a confirmed Comcast fact
+The Comcast press release named ProLiant (compute) specifically; it did **not** name the X10000 or any storage product for Comcast's trial. But HPE's broader AI Grid/GreenLake messaging is explicit that storage is meant to be part of the same integrated, single-vendor-managed stack as compute and networking, not a separate sale:
+- HPE has brought Juniper Data Center Networking into GreenLake and integrated Compute Ops Management so customers manage servers and network fabrics — and storage — from one interface, marketed as "unified management of compute, storage and networking."
+- The Alletra Storage MP X10000's Data Intelligence Node (NVIDIA L40S-powered) does in-line metadata/vector-embedding enrichment — the exact function that feeds RAG/small-language-model inference, i.e., the same workload class as Comcast's concierge-agent use case. Storage becomes an active part of AI response speed/relevance, not passive capacity.
+- Compute, network, and storage are each independently NVIDIA-certified, letting HPE claim a fully validated end-to-end stack rather than "storage integration is your problem."
+
+**Why this framing would plausibly appeal to Comcast**, if it turns out storage is (or could be) in scope:
+1. Comcast's trial is explicitly testing operational scale — "resiliency, scalability across Comcast's footprint" for potentially thousands of regional sites. Managing compute+network+storage as three separate vendor relationships at that scale is an operations burden a single GreenLake-managed stack reduces.
+2. Comcast is already carrying disaggregation/integration risk elsewhere (the DIY, multi-vendor Janus/DriveNets/UfiSpace core build) — a pre-integrated, single-support edge AI stack is a natural complement, letting engineering effort go toward the network-core work that's strategically differentiated for Comcast, while edge AI infrastructure is comparatively turnkey.
+3. AI Grid is explicitly built for multi-tenant, service-provider operating models — relevant because Comcast Business would be reselling these AI experiences to its own SMB customers, requiring carrier-grade multi-tenant isolation.
+4. GreenLake's pay-per-use consumption matches Comcast's current capex posture (residential broadband under subscriber pressure, Business/AI as the funded growth bet) — letting spend scale with trial results rather than committing capex up front across many sites.
+
+**How to use this in the interview:** raise it as your own informed hypothesis/question ("I'd want to understand whether storage is in scope for the AI Grid trial at Comcast, and if HPE's positioning it as part of one managed stack with compute and Juniper networking") rather than asserting it as a confirmed fact — see your-questions.md.
+
 ## What Comcast is doing with its own network (context, not necessarily HPE-sourced)
 
 - **"Janus" initiative**: Comcast is virtualizing/disaggregating its network core using **DriveNets Network Cloud** software on **UfiSpace** white-box hardware. Trial started Atlanta, Sept 2024; since expanded nationwide. This shifts core routing/switching/transport functions from proprietary hardware onto disaggregated, cloud-style infrastructure.
