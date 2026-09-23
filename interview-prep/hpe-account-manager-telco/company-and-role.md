@@ -64,6 +64,13 @@ HPE was named a **Leader in the 2025 Gartner Magic Quadrant for Enterprise Stora
 
 For a full three-way breakdown (segment-by-segment across HPE, NetApp, and Pure Storage/Everpure — including the Feb 2026 Pure Storage → Everpure rebrand), see [storage-competitive-matrix.md](./storage-competitive-matrix.md).
 
+### Software-defined storage on x86 + Alletra Storage MP — a real, current combination
+Two things worth distinguishing:
+1. **Alletra Storage MP X10000 is itself already software-defined storage on x86.** It's a containerized (Kubernetes-orchestrated), disaggregated (DASE) system built on ProLiant server chassis with NVMe fabric interconnect — built by HPE on standard components, not OEM'd or licensed. It's not something you combine with x86 SDS after the fact; that's what it natively is.
+2. **HPE Data Fabric** (formerly Ezmeral Data Fabric, MapR lineage) is a separate, more general SDS layer — deployable on physical or virtual x86 machines of the customer's choosing, providing file/NoSQL/object/streaming storage. Actively developed (v8.1 shipped May 2026 with agentic AI features, policy-based data placement, Iceberg/Polaris catalog support).
+
+HPE explicitly pairs these: a May 2026 announcement described Data Fabric as *"a federated layer spanning edge, cloud, colocated infrastructure, and third-party storage,"* abstracting physical data location behind a global namespace with policy-driven data movement — shipped in the same release as Alletra MP X10000/B10000 updates, all under GreenLake. The practical architecture: Data Fabric software runs on distributed edge/x86 compute for local data services without needing a dedicated appliance at every site, federated via one global namespace with dedicated Alletra Storage MP capacity at hub/core sites for heavier AI-ready workloads. Relevant for any account with many small distributed sites — see comcast-account.md for how this could map to Comcast's edge-AI footprint.
+
 ### Storage competitive matchup: NetApp AFF A-Series (incl. A20)
 NetApp refreshed its all-flash line in 2025 into a single OS (ONTAP) story across tiers: **A20** (entry, ROBO/start-small, ~15TB+) → A30 → A50 → A70 → A90 (AI/HPC) → A1K (flagship AI/large-scale). NetApp's pitch is "one ONTAP OS, non-disruptive scale from entry to flagship."
 
