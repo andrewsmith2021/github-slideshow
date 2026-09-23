@@ -32,6 +32,7 @@ Three moves in the last 14 months reshape what "Account Manager – Telco" actua
 
 - **Dell Technologies** — biggest infra competitor, aggressive in telco/edge.
 - **Cisco** — historically strong in service-provider networking; now a more direct Juniper/HPE-Networking competitor post-acquisition.
+- **NetApp** — primary storage-specific competitor (see section 5 below for product-level matchups).
 - **Nokia / Ericsson** — telecom-native infrastructure vendors (RAN, core), different layer but compete for some infra budget/mindshare.
 - **Hyperscalers (AWS, Microsoft Azure, Google Cloud)** — competing narrative for where telcos put AI/compute workloads (cloud vs. on-prem/GreenLake).
 - **Nutanix, IBM, HCLTech (as a services player)** — adjacent competitors/partners depending on the deal.
@@ -41,3 +42,32 @@ Be ready to articulate HPE's differentiation in 1-2 sentences: an integrated, op
 ## 4. Account/segment context to research before the interview
 
 The account is **Comcast** — see [comcast-account.md](./comcast-account.md) for the full deep-dive, including HPE's live AI Grid field trial with Comcast (HPE ProLiant + HPE Juniper + NVIDIA), Comcast's own network initiatives (DOCSIS 4.0, the DriveNets-based "Janus" core virtualization), and where the real growth/budget sits (Comcast Business, not residential broadband).
+
+## 5. HPE Storage portfolio (2026)
+
+HPE's storage line is anchored by the **Alletra** family, plus data protection and HCI products:
+
+| Product | Positioning | Lineage |
+|---|---|---|
+| **Alletra Storage 5000** | Hybrid-flash, cost-efficient general-purpose + secondary/backup, entry-to-midrange budgets, dynamic per-volume service levels (All Flash / Auto Flash / Minimal Flash) | Successor to Nimble HF/Adaptive Flash |
+| **Alletra Storage 6000** | All-flash NVMe, business-critical workloads, entry-to-midrange scale | Successor to Nimble AF |
+| **Alletra Storage MP B10000** | Mission-critical block storage; 2026 update added autonomous issue detection/resolution, expanded to 6 controller nodes | Successor lineage to Primera/3PAR |
+| **Alletra Storage MP X10000** | Object + file (native file added 2026) for large-scale unstructured/AI data; first **NVIDIA-Certified Storage** object platform (GTC, March 2026); data intelligence nodes with NVIDIA L40S GPUs process data in-line; scales to 16 nodes/23PB | Built for AI/analytics pipelines, incorporates earlier VAST Data integration |
+| **MSA** | True entry-level/budget SAN | — |
+| **StoreOnce / MSL** | Dedup backup target / tape libraries | — |
+| **Zerto** | Continuous data protection & DR software | Acquired 2021 |
+| **SimpliVity** | Hyperconverged infrastructure (HCI) | — |
+| **Data Fabric** | Cross-environment data movement/management software | — |
+| **GreenLake for Block/File Storage** | Same Alletra capability delivered as-a-service (pay-per-use) via HPE GreenLake | — |
+
+HPE was named a **Leader in the 2025 Gartner Magic Quadrant for Enterprise Storage Platforms.**
+
+### Storage competitive matchup: NetApp AFF A-Series (incl. A20)
+NetApp refreshed its all-flash line in 2025 into a single OS (ONTAP) story across tiers: **A20** (entry, ROBO/start-small, ~15TB+) → A30 → A50 → A70 → A90 (AI/HPC) → A1K (flagship AI/large-scale). NetApp's pitch is "one ONTAP OS, non-disruptive scale from entry to flagship."
+
+HPE matchups, best fit first:
+1. **Alletra Storage 6000** — closest all-flash-to-all-flash competitor to A20 at entry/midrange scale.
+2. **Alletra Storage 5000** — better fit if the deal is more cost/capacity-driven or backup/secondary use case than pure performance (hybrid-flash, flexible tiering).
+3. **Alletra Storage MP (B10000/X10000)** — the right counter to NetApp's "one OS scales from A20 to A1K" argument specifically: HPE's answer is one common MP platform/architecture across block and object/file, with a credible growth path into AI workloads via the NVIDIA-certified X10000. Bring this up if the account has AI/analytics ambitions, to reframe from a spec fight into a platform-growth conversation.
+- **MSA is not a real substitute** for A20 — it lacks A20's enterprise data-services depth (dedup/compression, ransomware detection, snapshot/replication); don't offer it as a like-for-like swap.
+- Broad positioning: HPE competes on pricing/GreenLake consumption economics; NetApp's edge is ONTAP's maturity and SnapMirror replication. If the account already runs ONTAP elsewhere, expect a switching-cost objection — counter with GreenLake economics and the MP growth story rather than a feature checklist.
