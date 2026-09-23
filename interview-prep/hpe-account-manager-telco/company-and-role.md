@@ -39,6 +39,23 @@ Three moves in the last 14 months reshape what "Account Manager – Telco" actua
 
 Be ready to articulate HPE's differentiation in 1-2 sentences: an integrated, open, as-a-service (GreenLake) portfolio spanning compute-to-AI-to-network (now with Juniper) purpose-built for high-density, low-latency, AI-native workloads — vs. point-product competitors or public-cloud-only approaches.
 
+### What GreenLake actually is — not "just billing," but not itself the control plane either
+This underpins every "GreenLake unifies compute/storage/networking" claim elsewhere in this workspace (comcast-account.md, storage-competitive-matrix.md), so get it precise — it's a sharper answer than most people give, and worth having ready if asked directly ("is GreenLake the control plane for this architecture, or just a consumption model?").
+
+GreenLake is a **layered architecture**, not a single thing:
+
+1. **Domain-specific control planes do the actual operational work** — these are the real engines:
+   - **Data Services Cloud Console (DSCC)** — the real control plane for storage (Alletra). HPE's own description: "a highly extensible, API-first control plane... deployed on HPE GreenLake, that provides a control plane for simplifying data infrastructure management and delivering data services across edge-to-cloud environments."
+   - **Compute Ops Management** — the real control plane for servers (ProLiant): deployment, lifecycle management, single-pane-of-glass across distributed compute regardless of physical location.
+   - **Aruba Central / Juniper Mist** — the real control plane for networking.
+2. **GreenLake is the platform layer above them** — identity/SSO, a common workspace, marketplace, unified portal/API surface, and the consumption/billing model (typically a committed baseline plus metered burst capacity, with HPE pre-staging extra headroom so customers can burst without a procurement cycle). GreenLake is what makes DSCC, Compute Ops Management, and Aruba/Juniper Mist feel like one system — shared login, shared billing, shared visibility — not itself the low-level engine that provisions a volume or reconfigures a switch.
+
+**So when HPE says it "brought Juniper Data Center Networking into GreenLake for unified management of compute, storage and networking"** (referenced in comcast-account.md), what's actually happening is Juniper's own networking control plane getting surfaced inside the GreenLake portal/identity/billing layer alongside DSCC and Compute Ops Management — not GreenLake itself reaching down and reconfiguring a router.
+
+**Caveat worth knowing:** analysts flag that buyers should validate "control-plane consistency" across these domain consoles before committing to a long-term consumption agreement — integration maturity between DSCC, Compute Ops Management, and networking consoles has historically varied, so "one pane of glass" is the direction of travel, not a guaranteed-seamless reality everywhere yet.
+
+**The answer to have ready:** *"GreenLake is the unifying platform layer — identity, billing, single portal — sitting above the domain-specific control planes that do the real work: Data Services Cloud Console for storage, Compute Ops Management for compute, and Juniper's own control plane for networking. The value isn't that GreenLake replaces those, it's that it makes them operable as one system and consumable as one commercial relationship."* That's materially better than either "yes, one control plane" (imprecise) or "no, it's just billing" (also wrong).
+
 ## 4. Account/segment context to research before the interview
 
 The account is **Comcast** — see [comcast-account.md](./comcast-account.md) for the full deep-dive, including HPE's live AI Grid field trial with Comcast (HPE ProLiant + HPE Juniper + NVIDIA), Comcast's own network initiatives (DOCSIS 4.0, the DriveNets-based "Janus" core virtualization), and where the real growth/budget sits (Comcast Business, not residential broadband).
