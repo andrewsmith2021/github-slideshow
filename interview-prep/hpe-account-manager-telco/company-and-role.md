@@ -56,6 +56,13 @@ GreenLake is a **layered architecture**, not a single thing:
 
 **The answer to have ready:** *"GreenLake is the unifying platform layer — identity, billing, single portal — sitting above the domain-specific control planes that do the real work: Data Services Cloud Console for storage, Compute Ops Management for compute, and Juniper's own control plane for networking. The value isn't that GreenLake replaces those, it's that it makes them operable as one system and consumable as one commercial relationship."* That's materially better than either "yes, one control plane" (imprecise) or "no, it's just billing" (also wrong).
 
+### GreenLake's management-plane value is separable from the consumption-billing model
+This matters if a customer's culture leans capex (see the capex-vs-opex discussion in comcast-account.md): **you don't have to buy hardware on consumption billing to get GreenLake's management-plane benefits.** HPE Compute Ops Management can be applied to servers a customer already owns outright — capex-purchased, no consumption billing involved — and the COM license itself can be bought **upfront** (one-time) rather than metered, with Eval/1-year/3-year/5-year term options under either billing model. So there are really two separate decisions, not one:
+1. **How is the hardware financed** — capex vs. subscription/consumption. A customer could reasonably choose either, or shift from one to the other as a relationship matures (e.g., consumption during an unproven pilot, capex once validated).
+2. **Do you want the unified management/orchestration layer** (Compute Ops Management, DSCC, Juniper Mist, all under GreenLake) — this is usually the right answer regardless of (1), because it's what makes managing infrastructure across many distributed sites operationally possible at all, not just financially efficient.
+
+Don't present GreenLake as an all-or-nothing choice tied to a customer's billing preference — that's a weaker, less accurate pitch than separating the financing question from the management-plane question.
+
 ## 4. Account/segment context to research before the interview
 
 The account is **Comcast** — see [comcast-account.md](./comcast-account.md) for the full deep-dive, including HPE's live AI Grid field trial with Comcast (HPE ProLiant + HPE Juniper + NVIDIA), Comcast's own network initiatives (DOCSIS 4.0, the DriveNets-based "Janus" core virtualization), and where the real growth/budget sits (Comcast Business, not residential broadband).
