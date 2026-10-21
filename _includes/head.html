@@ -20,3 +20,15 @@
 	link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'node_modules/reveal.js/css/print/paper.css';
 	document.getElementsByTagName( 'head' )[0].appendChild( link );
 </script>
+<!-- Compact sizing so text-heavy slides fit -->
+<style>
+	.reveal { font-size: 26px; }
+	.reveal h1 { font-size: 2.2em; margin-bottom: 0.5em; }
+	.reveal h3 { font-size: 1.3em; }
+	.reveal ul, .reveal ol { display: block; }
+	.reveal li { margin-bottom: 0.35em; line-height: 1.3; }
+	.reveal table { font-size: 0.8em; }
+	.reveal table th, .reveal table td { padding: 0.3em 0.6em; }
+	.reveal blockquote { width: 90%; font-size: 1.1em; }
+	.reveal small { font-size: 0.65em; }
+</style>

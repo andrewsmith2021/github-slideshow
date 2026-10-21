@@ -17,9 +17,9 @@ plugins:
   - jemoji
 
 ## personalize your slide show
-title:       github-slideshow
+title:       HPE Interview Prep
 author:      GitHubTeacher
-description: A fun activity for learning Git and GitHub.
+description: Interview prep on positioning HPE observability at Comcast.
 
 sass:
   style:     :compressed
