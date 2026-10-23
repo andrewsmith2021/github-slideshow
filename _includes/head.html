@@ -19,6 +19,8 @@
 	link.type = 'text/css';
 	link.href = window.location.search.match( /print-pdf/gi ) ? 'node_modules/reveal.js/css/print/pdf.css' : 'node_modules/reveal.js/css/print/paper.css';
 	document.getElementsByTagName( 'head' )[0].appendChild( link );
+	// Light, printer-friendly colors for PDF export
+	if ( window.location.search.match( /print-pdf/gi ) ) document.documentElement.classList.add( 'print-light' );
 </script>
 <!-- Compact sizing so text-heavy slides fit -->
 <style>
@@ -31,4 +33,20 @@
 	.reveal table th, .reveal table td { padding: 0.3em 0.6em; }
 	.reveal blockquote { width: 90%; font-size: 1.1em; }
 	.reveal small { font-size: 0.65em; }
+
+	/* Printer-friendly theme for PDF export (?print-pdf) */
+	html.print-light body,
+	html.print-light .reveal .backgrounds,
+	html.print-light .reveal .slide-background,
+	html.print-light .reveal .slides section { background: #fff !important; }
+	html.print-light .reveal { color: #222; }
+	html.print-light .reveal h1,
+	html.print-light .reveal h2 { color: #01a982; }
+	html.print-light .reveal h3 { color: #333; }
+	html.print-light .reveal strong { color: #000; }
+	html.print-light .reveal a { color: #0b5cad; }
+	html.print-light .reveal table th,
+	html.print-light .reveal table td { border-bottom: 1px solid #bbb; }
+	html.print-light .reveal blockquote { background: #f2f2f2; box-shadow: none; color: #222; }
+	html.print-light .reveal small { color: #555; }
 </style>
